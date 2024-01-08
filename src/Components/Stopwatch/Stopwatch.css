@@ -1,0 +1,51 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Assets/pexels-vlada-karpovich-4050405.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.stopWatch{
+    margin: auto;
+    border: 4px solid;
+    border-radius: 20px;
+    width: 35%;
+    height: 320px;
+    position: relative;
+    top: 100px;
+    backdrop-filter: blur(20px);
+}
+.stopWatch h2{
+    font-weight: 700;
+}
+.stopWatch .sw{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 33px;
+    font-weight: 500;
+    /* position: fixed; */
+}
+.stopWatch .sw p{
+    display: flex;
+}
+.stopWatch .bttns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.stopWatch .bttns button{
+    width: 100px;
+    font-weight: 700;
+}
+@media (max-width:767px) {
+    body{
+        height: 92vh;
+    }
+    .stopWatch{
+        width: 100%;
+    }    
+    .stopWatch .bttns button{
+        width: 60px;
+    }
+}
